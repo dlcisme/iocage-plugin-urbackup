@@ -1,5 +1,16 @@
 #!/bin/sh
 
+##Brief USAGE:
+##   /usr/local/bin/urbackupsrv run  [-i] [-j <num>] [-g <bytes>] [-c <path>]
+##                                   [-u <user>] [-s <path>] [-b <network
+##                                   interface name>] ...  [-w <path>] [-e]
+##                                   [-d] [-t] [-v <debug|info|warn|error>]
+##                                   [-l <path>] [-p <port number>] [-f <port
+##                                   number>] [--] [--version] [-h]
+
+## For complete USAGE and HELP type:
+##   /usr/local/bin/urbackupsrv run --help
+
 # set the data location
 DATA_LOCATION="/app-data/urbackup"
 
