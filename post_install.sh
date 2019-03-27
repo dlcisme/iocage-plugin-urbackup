@@ -20,6 +20,9 @@ mkdir -p $DATA_LOCATION
 # make "urbackup" the owner of the data location
 chown -R urbackup:urbackup $DATA_LOCATION
 
+# make "urbackup_server" executable
+chmod +x /usr/local/etc/rc.d/urbackup_server
+
 # enable UrBackup to start at boot
 sysrc "urbackup_server_enable=YES"
 
