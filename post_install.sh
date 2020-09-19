@@ -26,7 +26,7 @@ chmod +x /usr/local/etc/rc.d/urbackup_server
 # enable UrBackup to start at boot
 sysrc "urbackup_server_enable=YES"
 
-# set Nginx config file and data directory location
+# set UrBackup config file and data directory location
 sysrc "urbackup_server_flags=-c $DATA_LOCATION/urbackupsrv.conf"
 
 # start the urbackup service
