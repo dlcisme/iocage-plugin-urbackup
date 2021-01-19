@@ -27,7 +27,7 @@ mkdir -p $VAR_LOCATION
 chown -R urbackup:urbackup $DATA_LOCATION
 
 # make "urbackup" the owner of the var/urbackup location
-chown -R urbackup"urbackup $VAR_LOCATION
+chown -R urbackup:urbackup $VAR_LOCATION
 
 # enable UrBackup to start at boot
 sysrc "urbackup_server_enable=YES"
