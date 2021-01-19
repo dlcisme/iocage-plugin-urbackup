@@ -21,7 +21,7 @@ VAR_LOCATION="/app-data/urbackup/var/backup"
 mkdir -p $DATA_LOCATION
 
 # create the var/urbackup location
-mkrdir -p $VAR_LOCATION
+mkdir -p $VAR_LOCATION
 
 # make "urbackup" the owner of the data location
 chown -R urbackup:urbackup $DATA_LOCATION
