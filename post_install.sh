@@ -35,5 +35,7 @@ sysrc "urbackup_server_enable=YES"
 # set UrBackup config file and data directory location
 sysrc "urbackup_server_flags=-c $DATA_LOCATION/urbackupsrv.conf"
 
+
+#NOTE: we meed to mount the external file systems manually first, then we can start the server
 # start the urbackup service
 # service urbackup start
