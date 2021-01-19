@@ -14,14 +14,20 @@
 # set the data location
 DATA_LOCATION="/app-data/urbackup"
 
+# set the var/urbackup location
+VAR_LOCATION="/app-data/urbackup/var/backup"
+
 # create the data location
 mkdir -p $DATA_LOCATION
+
+# create the var/urbackup location
+mkrdir -p $VAR_LOCATION
 
 # make "urbackup" the owner of the data location
 chown -R urbackup:urbackup $DATA_LOCATION
 
-# make "urbackup_server" executable
-chmod +x /usr/local/etc/rc.d/urbackup_server
+# make "urbackup" the owner of the var/urbackup location
+chown -R urbackup"urbackup $VAR_LOCATION
 
 # enable UrBackup to start at boot
 sysrc "urbackup_server_enable=YES"
